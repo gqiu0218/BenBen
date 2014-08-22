@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title" />
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12.0dip"
+        android:background="@drawable/rect_frame_round_strike"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip" >
+
+            <TextView
+                android:id="@+id/emailIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:text="用户名:"
+                android:textColor="#ff3c4857"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/userID"
+                android:layout_width="222.0dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/emailIcon"
+                android:background="#00ffffff"
+                android:hint="请输入注册手机号码"
+                android:inputType="phone"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:textColor="#ff4b4b4b"
+                android:textColorHint="#ffcdcdcd"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/deal_card_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip" >
+
+            <TextView
+                android:id="@+id/passwordIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:text="密    码:"
+                android:textColor="#ff3c4857"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/userPassword"
+                android:layout_width="222.0dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/passwordIcon"
+                android:background="#00ffffff"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:minWidth="250.0dip"
+                android:singleLine="true"
+                android:textColor="#ff4b4b4b"
+                android:textColorHint="#ffcdcdcd"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12.0dip"
+        android:background="#FF0000"
+        android:text="登 录"
+        android:textColor="#ffffffff"
+        android:textSize="17.0sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linAutoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/choose_login"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:text="自动登录"
+            android:textColor="#ff3c4857"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

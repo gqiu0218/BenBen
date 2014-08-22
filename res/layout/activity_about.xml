@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/comm_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/common_title"
+        android:layout_margin="8.0dip"
+        android:background="@drawable/background_corners" >
+
+        <RelativeLayout
+            android:id="@+id/product_detail_info_trunk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/company_log"
+                android:layout_width="165.0dip"
+                android:layout_height="85.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="28.0dip"
+                android:src="@drawable/company_logo" />
+
+            <ImageView
+                android:id="@+id/quick_mark_image"
+                android:layout_width="135.0dip"
+                android:layout_height="125.0dip"
+                android:layout_below="@+id/company_log"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30.0dip"
+                android:padding="2.0dip"
+                android:src="@drawable/jd_app_quick_mark" />
+
+            <TextView
+                android:id="@+id/quick_mark_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quick_mark_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30.0dip"
+                android:text="扫描二维码,您的朋友也可下载嘿咻客户端"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/product_version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quick_mark_download"
+                android:layout_marginTop="25dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/product_copy_right"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_version"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="10.0dip"
+                android:text="Copyright©2011-2014 嘿咻 版权所有"
+                android:textSize="14.0dip"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

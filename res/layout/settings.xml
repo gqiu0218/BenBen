@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_bg_color" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/comm_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10.0dip" >
+
+                <LinearLayout
+                    android:id="@+id/setting_list_comment"
+                    style="@style/setting_item_center" >
+
+                    <TextView
+                        android:id="@+id/list_comment_text"
+                        style="@style/setting_item_text"
+                        android:text="@string/setting_list_comment" />
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+
+                    <TextView
+                        android:id="@+id/list_comment_mode"
+                        style="@style/setting_alt_text" />
+
+                    <ImageView
+                        android:id="@+id/list_comment_arrow"
+                        style="@style/setting_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/setting_load_image"
+                    style="@style/setting_item_center" >
+
+                    <TextView
+                        android:id="@+id/load_image_text"
+                        style="@style/setting_item_text"
+                        android:text="@string/setting_load_image" />
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+
+                    <TextView
+                        android:id="@+id/load_image_mode"
+                        style="@style/setting_alt_text" />
+
+                    <ImageView
+                        android:id="@+id/load_image_arrow"
+                        style="@style/setting_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/clear"
+                    style="@style/setting_item_end" >
+
+                    <TextView
+                        android:id="@+id/clear_text"
+                        style="@style/setting_item_text"
+                        android:text="@string/setting_clear" />
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+
+                    <TextView
+                        android:id="@+id/cache_size"
+                        style="@style/setting_alt_text"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/clear_arrow"
+                        style="@style/setting_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/notify"
+                    style="@style/setting_item_head"
+                    android:layout_marginTop="15.0dip" >
+
+                    <TextView
+                        android:id="@+id/notify_text"
+                        style="@style/setting_item_text"
+                        android:text="@string/setting_notify" />
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_notify"
+                        style="@style/setting_checkbox" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/update"
+                    style="@style/setting_item_center" >
+
+                    <TextView
+                        android:id="@+id/update_text"
+                        style="@style/setting_item_text"
+                        android:text="@string/setting_update" />
+
+                    <ImageView
+                        android:id="@+id/version_new"
+                        style="@style/setting_hint_new"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+
+                    <TextView
+                        android:id="@+id/current_version"
+                        style="@style/setting_alt_text" />
+
+                    <ImageView
+                        android:id="@+id/update_arrow"
+                        style="@style/setting_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/use_help"
+                    style="@style/setting_item_end" >
+
+                    <TextView
+                        android:id="@+id/use_help_text"
+                        style="@style/setting_item_text"
+                        android:text="@string/setting_use_help" />
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+
+                    <ImageView
+                        android:id="@+id/use_help_arrow"
+                        style="@style/setting_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/release_info"
+                style="@style/setting_release_info" />
+        </LinearLayout>
+    </ScrollView>
+    <!-- </com.ss.android.common.ui.view.SwipeOverlayFrameLayout> -->
+
+</RelativeLayout>

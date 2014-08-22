@@ -1,0 +1,146 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_selector</item>
+    </style>
+
+    <style name="setting_item_head">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/bg_row_head</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">42.0dip</item>
+    </style>
+
+    <style name="setting_checkbox">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_weight">0.0</item>
+    </style>
+
+    <style name="setting_item_center" parent="@style/setting_item_head">
+        <item name="android:background">@drawable/bg_row_center</item>
+        <item name="android:layout_marginTop">-0.5dip</item>
+    </style>
+
+    <style name="setting_item_end" parent="@style/setting_item_head">
+        <item name="android:background">@drawable/bg_row_end</item>
+        <item name="android:layout_marginTop">-0.5dip</item>
+    </style>
+
+    <style name="setting_item_text">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/setting_item_text</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+
+
+    <style name="setting_release_info">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/setting_copyright</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">6.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+
+    <style name="setting_alt_text">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@drawable/setting_alt_text</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_weight">0.0</item>
+    </style>
+
+    <style name="setting_hint_new">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:src">@drawable/icon_new</item>
+        <item name="android:layout_weight">0.0</item>
+    </style>
+
+    <style name="setting_arrow" parent="@style/setting_checkbox">
+        <item name="android:src">@drawable/arrow_drawer</item>
+    </style>
+
+    <style name="item_title">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@drawable/item_title</item>
+    </style>
+
+    <style name="StyledIndicators" parent="@android:style/Theme.Light">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+    </style>
+
+    <style name="CustomTitlePageIndicator">
+        <item name="footerColor">#2ea2fd</item>
+        <item name="footerLineHeight">1dp</item>
+        <item name="footerIndicatorHeight">3dp</item>
+        <item name="footerIndicatorStyle">underline</item>
+        <item name="android:textColor">#000000</item>
+        <item name="selectedColor">#2ea2fd</item>
+        <item name="selectedBold">true</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/custom_tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">1dp</item>
+        <item name="android:paddingRight">1dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@drawable/main_tab_selector</item>
+    </style>
+
+      <style name="list_itemsize">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff3c4857</item>
+    </style>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">今日头条</string>
+   
+    <string name="setting_list_comment">列表页评论</string>
+    <string name="setting_refresh_list">列表页刷新</string>
+    <string name="setting_load_image">2G/3G网络流量</string>
+    <string name="setting_notify">推送通知</string>
+    <string name="setting_clear">清理缓存</string>
+    <string name="setting_recommend">精彩应用推荐</string>
+    <string name="setting_update">检查新版本</string>
+    <string name="setting_use_help">使用帮助</string>
+</resources>
