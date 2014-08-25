@@ -4,7 +4,7 @@ public class StringUtils
 {
 
     /**
-     * ÅÐ¶Ï×Ö·û´®ÊÇ·ñÎª¿Õ
+     * ÅÐ¶Ï×Ö·û´®ÊÇ·ñÎªnull
      * 
      * @param sourse
      * @return
