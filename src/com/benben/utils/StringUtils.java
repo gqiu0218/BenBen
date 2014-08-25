@@ -11,6 +11,6 @@ public class StringUtils
      */
     public static boolean isNotNull(String sourse)
     {
-        return sourse != null && !sourse.equals("");
+        return sourse != null && !"".equals(source);
     }
 }
