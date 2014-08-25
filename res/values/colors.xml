@@ -23,4 +23,17 @@
 	<color name="setting_alt_text_selected">#ffff0000</color>
 	<color name="setting_alt_text_normal">#ff666666</color>
 	<color name="item_title_disabled">#ff888888</color>
+	
+	
+	<!-- 简单的color值 -->
+	<color name="white">#ffffff</color>
+	<color name="black">#000000</color>
+	<color name="stroke">#A1A1A1</color>
+	<color name="touch">#a0999999</color>
+	<color name="grey">#999999</color>
+	<color name="bg_grey">#ECECEC</color>
+	<color name="top_menu_dialog_pressed">#2E2E28</color>
+	<color name="top_menu_dialog_normal">#35352F</color>
+	
+	
 </resources>

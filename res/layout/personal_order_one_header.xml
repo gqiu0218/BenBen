@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_all"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/shape_grey_radius"
+                android:text="全部"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/bt_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/shape_white_radius"
+                android:text="我的"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="30dip"
+            android:layout_weight="2"
+            android:gravity="center|right" >
+
+            <Button
+                android:id="@+id/bt_news"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/shape_grey_left_radius"
+                android:text="全部"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/bt_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                 android:background="@drawable/shape_white_right_radius"
+                android:text="我的"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/black" />
+
+</LinearLayout>
